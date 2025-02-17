@@ -22,7 +22,10 @@ body {
     margin-left: 260px;
     padding: 20px;
 }
-
+.card {
+    border: none;
+    border-radius: 10px;
+}
 .card-header {
     font-weight: bold;
 }
