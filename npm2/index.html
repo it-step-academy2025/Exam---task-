@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- css се дърпа от node_mudules папката -->
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <!-- icons -->
+     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <!-- vanilla css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- вграден js който помага за падащото меню -->
+     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- navbar START -->
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- container-fluid -> Този клас се използва за създаване на контейнер, който заема цялата ширина на екрана, като се адаптира към различни размери на екрана. -->
+        <div class="container-fluid">
+            <!-- "navbar-toggler" -> Този клас се използва за създаване на бутон, който при натискане показва или скрива съдържанието на навигационната лента -->
+            <!-- Атрибутите data-bs-toggle и data-bs-target се използват за управление на поведението на елемента с Bootstrap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar-brand -> Този клас се използва за стилизиране на логото или името на марката в навигационната лента -->
+            <a class="navbar-brand" href="#">IT Academy</a>
+        </div>
+    </nav>
+    <!-- navbar END -->
+
+    <!-- sidebar START -->
+    <div class="collapse sidebar" id="sidebarMenu">
+        <a href="#" class="active">Dashboard</a>
+        <!--href="profile.html-> пренасочва към тази страница -->
+        <a href="profile.html">User Profile</a>
+        <a href="#">Maps</a>
+        <a href="#">Notifications</a>
+        <a href="#">Support</a>
+    </div>
+    <!-- sidebar END -->
+
+    <!-- Footer START -->
+    <footer class="my-4">
+        <hr>
+        <div class="container text-center">
+            <p>© 2025 IT Academy. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer END -->
+</body>
+</html>
